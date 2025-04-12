@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    height:100%;
+    width: 100%;
+    overflow:auto
+}
+
+.team_heading{
+    color: rgb(20, 47, 79);
+}
+.shiv{
+    background: linear-gradient(to bottom, #001f3f, #01172e,#000);
+}
+
+.first {
+    text-align: center;
+    text-decoration: solid;
+    align-content:center;
+    margin: auto;
+    color: rgb(193, 224, 15);
+}
+
+.second {
+    color: aliceblue;
+    text-align: center;
+
+}
+span.hi{
+    color: rgb(44, 197, 14);
+    text-align: center;
+    align-items: center;
+    align-content:center;
+    font-size: xxx-large;
+}
+.second-2 {
+    color: aliceblue;
+    text-align: center;
+
+}
+span.hi2{
+    color: rgb(216, 28, 15);
+    text-align: center;
+    align-items: center;
+    align-content:center;
+    font-size: xxx-large;
+}
+.line1 {
+    color: rgb(145, 150, 150);
+    text-align: center;
+    align-items: center;
+    font-size: large;
+}
+
+.register-button {
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius:25px;
+    background-color: #4CAF50;
+    color: rgb(245, 246, 250);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-items: center;
+    margin-left: 44%;
+    
+}
+.register-button:hover { background-color: #1e291e;
+}
+
+.para1{
+    text-align: center;
+}
+
+h1.how{
+    color: aliceblue;
+}
+.para1{
+    color:antiquewhite;
+    font-size: large;
+}
+h1.team{
+    background-color: aliceblue;
+}
+p.team {
+    color: rgb(223, 228, 233);
+    font-size: xx-large;
+}
+.card1{
+    justify-content: center;
+
+}
+.card-text{
+    color: antiquewhite;
+}
+.card-text1{
+    color: antiquewhite;
+    justify-content: center;
+    text-align: center;
+}
+.team-box{
+    margin-left: auto;
+    margin-right: auto;
+}
+.meet {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #e1d6d6;
+  }
+
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .team-card {
+    width: 250px;
+    background: rgb(2, 26, 85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .team-info {
+    padding: 15px;
+  }
+
+  .team-info h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #f2ecec;
+  }
+
+  .team-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }

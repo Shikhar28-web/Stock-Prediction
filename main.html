@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BullBrain - Stock Prediction</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container header-content">
+          <div class="logo">
+            
+            <h1>BullBrain</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="container">
+          <div class="prediction-box">
+            <div id="inputForm" class="form-container">
+              <h2 class="colo">Predict Stock Movement</h2>
+              <form id="predictionForm">
+                <div class="form-group">
+                  <label for="shareName">Enter Share Name</label>
+                  <input
+                    type="text"
+                    id="shareName"
+                    placeholder="e.g., AAPL, GOOGLE"
+                    required
+                  />
+                </div>
+                <button type="submit" id="submitBtn">Get Prediction</button>
+              </form>
+            </div>
+
+            <div id="resultView" class="result-container hidden">
+              <h2>Prediction Result</h2>
+              <div class="result-content">
+                <p class="share-name">The stock <span id="shareNameResult"></span> will likely go:</p>
+                <div class="prediction-result">
+                  <div id="upResult" class="result-icon up hidden">
+                    <i data-lucide="trending-up"></i>
+                    <span>UP</span>
+                  </div>
+                  <div id="downResult" class="result-icon down hidden">
+                    <i data-lucide="trending-down"></i>
+                    <span>DOWN</span>
+                  </div>
+                </div>
+              </div>
+              <button id="resetBtn" class="reset-button">Make Another Prediction</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

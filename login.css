@@ -1,0 +1,88 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('ll.jpg');
+  padding: 20px;
+}
+
+.login-container {
+  background-color: #062e47;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #4de582;
+}
+
+.login-container p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a11c1c;
+  border-radius: 5px;
+  background-color: #2dacba;
+  color: #1b1f1c;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4de582;
+}
+
+.cta-button {
+  width: 100%;
+  background-color: #4de582;
+  color: #0a0a0a;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4de582;
+}
+
+.register-link {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: #4de582;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
