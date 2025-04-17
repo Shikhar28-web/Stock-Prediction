@@ -74,4 +74,3 @@ Tech Virus.html
 ### 🔹 Clone the Repository
 ```bash
 git clone https://github.com/Shikhar28-web/Stock-Prediction
-```bash
