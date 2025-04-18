@@ -12,7 +12,7 @@ st.header('Stock Market Predictor')
 
 stock = st.text_input('Enter Stock Symbol', 'GOOG')
 start = '2012-01-01'
-end = '2022-12-31'
+end = '2025-4-17'
 
 data = yf.download(stock, start, end)
 
@@ -34,6 +34,9 @@ ma_50_days = data.Close.rolling(50).mean()
 fig1 = plt.figure(figsize=(8,6))
 plt.plot(ma_50_days, 'r')
 plt.plot(data.Close, 'g')
+plt.xlabel('Time')
+plt.ylabel('Price(Dollars)')
+plt.legend()
 plt.show()
 st.pyplot(fig1)
 
@@ -43,6 +46,9 @@ fig2 = plt.figure(figsize=(8,6))
 plt.plot(ma_50_days, 'r')
 plt.plot(ma_100_days, 'b')
 plt.plot(data.Close, 'g')
+plt.xlabel('Time')
+plt.ylabel('Price(Dollars)')
+plt.legend()
 plt.show()
 st.pyplot(fig2)
 
@@ -52,6 +58,8 @@ fig3 = plt.figure(figsize=(8,6))
 plt.plot(ma_100_days, 'r')
 plt.plot(ma_200_days, 'b')
 plt.plot(data.Close, 'g')
+plt.xlabel('Time')
+plt.ylabel('Price(Dollars)')
 plt.show()
 st.pyplot(fig3)
 
@@ -75,6 +83,8 @@ fig4 = plt.figure(figsize=(8,6))
 plt.plot(predict, 'r', label='Original Price')
 plt.plot(y, 'g', label='Predicted Price')
 plt.xlabel('Time')
-plt.ylabel('Price')
+plt.ylabel('Price(Dollars)')
+plt.legend()
+
 plt.show()
 st.pyplot(fig4)
